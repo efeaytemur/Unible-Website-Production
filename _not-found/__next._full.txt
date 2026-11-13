@@ -1,0 +1,58 @@
+1:"$Sreact.fragment"
+3:"/_next/static/chunks/1qfyq1q9u8w8n.js"
+4:"ServiceWorkerRegistration"
+5:I[30679,["$3"],"$4"]
+6:I[80492,["$3"],"ThemeProvider"]
+7:I[39756,["$3"],"default"]
+8:I[37457,["$3"],"default"]
+9:"/_next/static/chunks/2n5qeheznvl4u.js"
+a:I[22016,["$3","$9"],""]
+e:I[97367,["$3"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:"ViewportBoundary"
+12:I[97367,["$3"],"$11"]
+14:"MetadataBoundary"
+15:I[97367,["$3"],"$14"]
+17:I[68027,["$3"],"default",1]
+:HL["/_next/static/chunks/3x-wm4579ex3w.css","style"]
+2:T406,
+(() => {
+  const supported = ["en","de","fr","es","it","sv"];
+  const storageKey = "unible-locale";
+  const pathLocale = window.location.pathname.split("/")[1].toLowerCase();
+
+  try {
+    if (supported.includes(pathLocale)) {
+      window.localStorage.setItem(storageKey, pathLocale);
+      return;
+    }
+
+    if (window.location.pathname !== "/") {
+      window.localStorage.setItem(storageKey, "en");
+      return;
+    }
+
+    const savedLocale = window.localStorage.getItem(storageKey);
+    const browserLocale = (navigator.languages || [navigator.language])
+      .map((language) => language.toLowerCase().split("-")[0])
+      .find((language) => supported.includes(language));
+    const locale = savedLocale && supported.includes(savedLocale) ? savedLocale : browserLocale;
+
+    if (locale && locale !== "en") {
+      window.location.replace(
+        "/" + locale + "/" + window.location.search + window.location.hash
+      );
+    }
+  } catch {
+    // Keep the English fallback when browser storage is unavailable.
+  }
+})();
+c:X
+d:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$La",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/2n5qeheznvl4u.js","async":true,"nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":false,"v":null}}]]
+b:[["children",{"s":"/_not-found","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$c"},"c":"$Qd"}]]
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3x-wm4579ex3w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/1qfyq1q9u8w8n.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$La",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]}]]}],"p":false,"v":null},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L12",null,{"children":"$L13"}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":"$L16"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$17",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3x-wm4579ex3w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"5_BKsGpAI6DT9CudJlTVk"}
+c:C
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:I[27201,["$3"],"IconMark"]
+10:null
+16:[["$","title","0",{"children":"Unible | Date, Chat & Meet New People"}],["$","meta","1",{"name":"description","content":"Make meaningful connections through Unible Date and BFF."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","link","3",{"rel":"icon","href":"/web/favicon.ico"}],["$","link","4",{"rel":"apple-touch-icon","href":"/web/apple-touch-icon.png"}],["$","$L18","5",{}]]

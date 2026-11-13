@@ -1,0 +1,83 @@
+1:"$Sreact.fragment"
+3:"/_next/static/chunks/1qfyq1q9u8w8n.js"
+4:"ServiceWorkerRegistration"
+5:I[30679,["$3"],"$4"]
+6:I[80492,["$3"],"ThemeProvider"]
+7:I[39756,["$3"],"default"]
+8:I[37457,["$3"],"default"]
+9:"/_next/static/chunks/0p77h80imyeei.js"
+a:"/_next/static/chunks/3nhft29xhev61.js"
+b:I[22016,["$3","$9","$a"],""]
+14:"DocumentLanguage"
+15:I[39151,["$3","$9","$a"],"$14"]
+16:"PageEntryTransition"
+17:I[59750,["$3","$9","$a"],"$16"]
+18:I[70119,["$3","$9","$a"],"Header"]
+1f:"ViewportBoundary"
+20:I[97367,["$3"],"$1f"]
+21:"MetadataBoundary"
+22:I[97367,["$3"],"$21"]
+23:"$Sreact.suspense"
+24:I[27201,["$3"],"IconMark"]
+:HL["/_next/static/chunks/3x-wm4579ex3w.css","style"]
+2:T406,
+(() => {
+  const supported = ["en","de","fr","es","it","sv"];
+  const storageKey = "unible-locale";
+  const pathLocale = window.location.pathname.split("/")[1].toLowerCase();
+
+  try {
+    if (supported.includes(pathLocale)) {
+      window.localStorage.setItem(storageKey, pathLocale);
+      return;
+    }
+
+    if (window.location.pathname !== "/") {
+      window.localStorage.setItem(storageKey, "en");
+      return;
+    }
+
+    const savedLocale = window.localStorage.getItem(storageKey);
+    const browserLocale = (navigator.languages || [navigator.language])
+      .map((language) => language.toLowerCase().split("-")[0])
+      .find((language) => supported.includes(language));
+    const locale = savedLocale && supported.includes(savedLocale) ? savedLocale : browserLocale;
+
+    if (locale && locale !== "en") {
+      window.location.replace(
+        "/" + locale + "/" + window.location.search + window.location.hash
+      );
+    }
+  } catch {
+    // Keep the English fallback when browser storage is unavailable.
+  }
+})();
+d:X
+10:X
+10:C
+13:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$L15",null,{"locale":"sv"}],["$","$L17",null,{"targetId":"safety-overview"}],["$","$L18",null,{"locale":"sv","copy":{"metaTitle":"Unible | Campuslivet, uppgraderat.","metaDescription":"50 % akademiskt nätverk, 50 % spontana campusplaner. Lär känna studenter på ditt universitet utan den obekväma känslan av en dejtingapp.","skipLink":"Hoppa till innehållet","nav":{"campus":"Campusliv","network":"Nätverk","lounge":"Lounge","vibe":"Känslan","safety":"Säkerhet","signIn":"Logga in","menu":"Meny","language":"Språk"},"goal":{"heading":"Lev ditt campusliv","title":"Lev campuslivet helt utan krångel.","body":"Campuslivet är bättre när det inte känns påtvingat. Oavsett om du behöver en studiekompis inför tentan, en 15 minuters fikapaus mellan föreläsningarna eller någon som vill följa med på fredagens planer gör Unible det enkelt och kravlöst att lära känna människor på ditt campus.","interestsLabel":"Unible-medlemmarnas intressen","cards":[{"alt":"Leende kvinna med en skateboard i en park","badge":"Friluftsliv"},{"alt":"Leende man som joggar i en stadspark","badge":"Löpning"},{"alt":"Kvinna med en liten fluffig hund utomhus","badge":"Hundägare"}]},"campus":{"eyebrow":"Unible-rörelsen","title":"Byggt av studenter, för en bättre campuskultur.","body":"Universitetet borde vara den enklaste platsen att lära känna människor, men digital osäkerhet håller alla kvar i sin egen bubbla. Unible finns för att bryta den barriären utan att du behöver ge upp din integritet eller bekvämlighet.\n\nStötta ett sundare sätt att umgås. Gå med i vår första campusvåg för att få tidig tillgång, påverka hur Unible fungerar på ditt universitet och sätta standarden för kravlösa kontakter.","cta":"Säkra grundartillgång"},"network":{"eyebrow":"Campusets två sidor","title":"50 % framtid. 50 % personkemi.","networkTitle":"Unible Network","loungeTitle":"Unible Lounge","dateBody":"Unible Network är skapat för dina akademiska mål och din karriär. Matcha med studenter på din fakultet, hitta en partner till Python-projektet eller bilda ett lag inför tentorna – och se vart kontakten leder.","dateCta":"Hitta en studiekompis","bffBody":"Unible Lounge är platsen där planer blir av utan pressen från dejtingappar. Ta en 15 minuters fika mellan föreläsningarna, hitta en badmintonrival eller följ enkelt med på en pubrunda på fredag.","bffCta":"Kliv in i Lounge"},"lounge":{"eyebrow":"Hitta ditt gäng","quote":"Jag lade spontant upp en plan om en picknick i solnedgången på campus. Fem tjejer från helt olika fakulteter följde med – nu är våra tisdagspicknickar i parken veckans höjdpunkt.","attribution":"Maja, Freja, Astrid och 3 andra • KTH Stockholm","cta":"Utforska Lounge-ögonblick"},"download":{"title":"Skaffa Unible-appen","body":"Skanna QR-koden för att komma igång.","cta":"Ladda ner nu"},"footer":{"apps":"Vår app","app":"Unible","company":"Företag","about":"Om oss","support":"Support","legal":"Juridisk information","privacy":"Integritet","terms":"Användarvillkor","guidelines":"Riktlinjer","copyright":"Unible. Alla rättigheter förbehållna."}},"currentPage":"safety"}],"$L19","$L1a"],["$L1b","$L1c"],"$L1d"]}],"p":"$@1e","v":null,"s":"$d"}}]]
+11:[["children",{"s":"safety","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@12","v":"$10","s":"$d"},"c":"$Q13"}]]
+e:[["children",{"s":{"n":"locale","t":"d","k":"sv","s":["account-deletion","community-guidelines","privacy-policy","safety","terms-of-use","the-vibe"]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@f","v":"$10","s":"$d"},"c":"$Q11"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3x-wm4579ex3w.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1qfyq1q9u8w8n.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$Lb",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[]]}]}]]}]}]]}],"p":"$@c","v":null,"s":"$d"},"c":"$Qe"},"h":{"r":["$","$1","h",{"children":[null,["$","$L20",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L22",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$23",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Säkerhet och integritet | Unible"}],["$","meta","1",{"name":"description","content":"Läs om integritet, gemenskapsregler, anmälningar och säkrare kontakter på Unible."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","link","3",{"rel":"canonical","href":"https://unible.app/sv/safety/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"https://unible.app/safety/"}],["$","link","5",{"rel":"alternate","hrefLang":"de","href":"https://unible.app/de/safety/"}],["$","link","6",{"rel":"alternate","hrefLang":"fr","href":"https://unible.app/fr/safety/"}],["$","link","7",{"rel":"alternate","hrefLang":"es","href":"https://unible.app/es/safety/"}],["$","link","8",{"rel":"alternate","hrefLang":"it","href":"https://unible.app/it/safety/"}],["$","link","9",{"rel":"alternate","hrefLang":"sv","href":"https://unible.app/sv/safety/"}],["$","link","10",{"rel":"alternate","hrefLang":"x-default","href":"https://unible.app/safety/"}],["$","link","11",{"rel":"icon","href":"/web/favicon.ico"}],["$","link","12",{"rel":"apple-touch-icon","href":"/web/apple-touch-icon.png"}],["$","$L24","13",{}]]}]}],null]}],null]}],"p":"$@25","v":null,"s":"$d"}},"a":"$@26","u":"$@27","b":"5_BKsGpAI6DT9CudJlTVk"}
+28:I[92349,["$3","$9","$a"],"Hero"]
+2c:"LocalePreferenceLink"
+2d:I[19637,["$3","$9","$a"],"$2c"]
+2e:I[97367,["$3"],"OutletBoundary"]
+19:["$","main",null,{"id":"main","children":[["$","$L28",null,{"locale":"sv"}],["$","section",null,{"id":"safety-overview","className":"safety-content","aria-labelledby":"safety-overview-title","children":["$","div",null,{"className":"safety-layout section-shell","children":[["$","header",null,{"className":"safety-intro","children":[["$","p",null,{"className":"eyebrow","children":"Säkerhet på Unible"}],["$","h2",null,{"id":"safety-overview-title","children":"Din säkerhet kommer först."}],[["$","p","Tydliga regler, genomtänkta integritetsinställningar och enkla anmälningsverktyg hjälper alla att skapa kontakt med större trygghet.",{"children":"Tydliga regler, genomtänkta integritetsinställningar och enkla anmälningsverktyg hjälper alla att skapa kontakt med större trygghet."}]]]}],["$","div",null,{"className":"safety-body","children":[["$","nav",null,{"className":"safety-nav","aria-label":"Avsnitt på sidan Säkerhet","children":[["$","p",null,{"children":"På den här sidan"}],[["$","a","privacy",{"href":"#privacy","children":"Integritetspolicy"}],["$","a","community",{"href":"#community","children":"Skydda den goda stämningen! Gemenskapsregler"}],["$","a","connections",{"href":"#connections","children":"Smarta träffar"}],["$","a","reporting",{"href":"#reporting","children":"Anmäl och blockera"}],["$","a","help",{"href":"#help","children":"Få hjälp"}],["$","a","account",{"href":"#account","children":"Radering av konto och data"}]]]}],["$","div",null,{"className":"safety-sections","children":[["$","article","privacy",{"id":"privacy","children":[["$","h3",null,{"children":"Integritetspolicy"}],[["$","p","Din integritet är viktig. Vi använder bara dina uppgifter för att driva Unible och förbättra din upplevelse.",{"children":["Din integritet är viktig. Vi använder bara dina uppgifter för att driva Unible och förbättra din upplevelse."]}],["$","p","Du kan granska dina profiluppgifter, uppdatera din profil och begära tillgång till eller radering av dina uppgifter. Vi säljer eller delar inte personuppgifter.",{"children":["Du kan granska dina profiluppgifter, uppdatera din profil och begära tillgång till eller radering av dina uppgifter. Vi säljer eller delar inte personuppgifter."]}]],["$","a",null,{"className":"button safety-support-button","href":"/sv/privacy-policy?intro=1","children":"Läs integritetspolicyn"}]]}],["$","article","community",{"id":"community","children":[["$","h3",null,{"children":"Skydda den goda stämningen! Gemenskapsregler"}],[["$","p","Äkta kontakter kräver äkta respekt. Identitetsstöld, trakasserier, hatpropaganda, hot och innehåll utan samtycke hör inte hemma på campus. Använd korrekta profiluppgifter, respektera andras gränser och visa hänsyn i varje samtal.",{"children":["Äkta kontakter kräver äkta respekt. Identitetsstöld, trakasserier, hatpropaganda, hot och innehåll utan samtycke hör inte hemma på campus. Använd korrekta profiluppgifter, respektera andras gränser och visa hänsyn i varje samtal."]}]],["$","a",null,{"className":"button safety-support-button","href":"/sv/community-guidelines?intro=1","children":"Läs gemenskapsreglerna"}]]}],["$","article","connections",{"id":"connections","children":[["$","h3",null,{"children":"Smarta träffar"}],[["$","p","Ta en stund och chatta på Unible innan du träffar någon utanför plattformen, och dela aldrig lösenord eller ekonomisk information.",{"children":["Ta en stund och chatta på Unible innan du träffar någon utanför plattformen, och dela aldrig lösenord eller ekonomisk information."]}],["$","p","När du träffar någon—oavsett om det är för en 15-minutersfika eller en pluggstund—välj en offentlig plats på campus eller ett välbesökt kafé, berätta för en vän vart du ska och ordna din egen transport.",{"children":["När du träffar någon—oavsett om det är för en 15-minutersfika eller en pluggstund—välj en offentlig plats på campus eller ett välbesökt kafé, berätta för en vän vart du ska och ordna din egen transport."]}]],"$undefined"]}],"$L29","$L2a","$L2b"]}]]}]]}]}]]}]
+1a:["$","footer",null,{"className":"site-footer","children":[["$","div",null,{"className":"footer-grid section-shell","children":[["$","a",null,{"className":"footer-brand","href":"/sv/","children":"Unible"}],["$","div",null,{"children":[["$","h2",null,{"children":"Vår app"}],["$","a",null,{"href":"/sv/","children":"Unible"}]]}],["$","div",null,{"children":[["$","h2",null,{"children":"Företag"}],["$","$Lb",null,{"href":"/sv/the-vibe?intro=1","children":"Om oss"}],["$","span",null,{"children":"Support"}]]}],["$","div",null,{"children":[["$","h2",null,{"children":"Juridisk information"}],["$","$Lb",null,{"href":"/sv/privacy-policy?intro=1","children":"Integritet"}],["$","$Lb",null,{"href":"/sv/terms-of-use?intro=1","children":"Användarvillkor"}],["$","$Lb",null,{"href":"/sv/community-guidelines?intro=1","children":"Riktlinjer"}]]}]]}],["$","div",null,{"className":"footer-lower section-shell","children":[["$","p",null,{"children":["© ",2026," ","Unible. Alla rättigheter förbehållna."]}],["$","nav",null,{"aria-label":"Språk","children":[["$","$L2d","en",{"href":"/safety?intro=1","locale":"en","hrefLang":"en","children":"English"}],["$","$L2d","de",{"href":"/de/safety?intro=1","locale":"de","hrefLang":"de","children":"Deutsch"}],["$","$L2d","fr",{"href":"/fr/safety?intro=1","locale":"fr","hrefLang":"fr","children":"Français"}],["$","$L2d","es",{"href":"/es/safety?intro=1","locale":"es","hrefLang":"es","children":"Español"}],["$","$L2d","it",{"href":"/it/safety?intro=1","locale":"it","hrefLang":"it","children":"Italiano"}],["$","$L2d","sv",{"href":"/sv/safety?intro=1","locale":"sv","hrefLang":"sv","aria-current":"page","children":"Svenska"}]]}]]}]]}]
+1b:["$","script","script-0",{"src":"/_next/static/chunks/0p77h80imyeei.js","async":true}]
+1c:["$","script","script-1",{"src":"/_next/static/chunks/3nhft29xhev61.js","async":true}]
+1d:["$","$L2e",null,{"children":["$","$23",null,{"name":"Next.MetadataOutlet","children":"$@2f"}]}]
+d:300
+29:["$","article","reporting",{"id":"reporting","children":[["$","h3",null,{"children":"Anmäl och blockera"}],[["$","p","Om någon går över gränsen eller får dig att känna obehag kan du blockera och anmäla personen på några sekunder. Varje anmälan förblir strikt konfidentiell och granskas direkt av vårt team—snabbt, rättvist och utan drama.",{"children":["Om någon går över gränsen eller får dig att känna obehag kan du blockera och anmäla personen på några sekunder. Varje anmälan förblir strikt konfidentiell och granskas direkt av vårt team—snabbt, rättvist och utan drama."]}],["$","p","Ta med alla relevanta detaljer när du anmäler ett problem så att teamet kan agera snabbt och rättvist.",{"children":["Ta med alla relevanta detaljer när du anmäler ett problem så att teamet kan agera snabbt och rättvist."]}]],"$undefined"]}]
+2a:["$","article","help",{"id":"help","children":[["$","h3",null,{"children":"Få hjälp"}],[["$","p","Kontakta vårt supportteam om du har frågor om ditt konto eller säkerhet. Du kan när som helst kontakta oss på support@unible.app — vi hjälper dig gärna. Om du eller någon annan är i omedelbar fara ska du först kontakta lokal räddningstjänst.",{"children":["Kontakta vårt supportteam om du har frågor om ditt konto eller säkerhet. Du kan när som helst kontakta oss på support@unible.app — vi hjälper dig gärna. Om du eller någon annan är i omedelbar fara ska du först kontakta lokal räddningstjänst."]}]],["$","a",null,{"className":"button safety-support-button","href":"","children":"Kontakta supporten"}]]}]
+2b:["$","article","account",{"id":"account","children":[["$","h3",null,{"children":"Radering av konto och data"}],[["$","p","Vi kommer att sakna dig på campus! När du är redo att gå vidare kan du permanent radera ditt konto och alla dina data direkt från profilinställningarna i appen.",{"children":["Vi kommer att sakna dig på campus! När du är redo att gå vidare kan du permanent radera ditt konto och alla dina data direkt från profilinställningarna i appen."]}],["$","p","Om du inte längre har tillgång till appen kan du enkelt begära radering via vår webbplats nedan.",{"children":["Om du inte längre har tillgång till appen kan du enkelt begära radering via vår webbplats nedan."]}]],["$","a",null,{"className":"button safety-support-button","href":"/sv/account-deletion?intro=1","children":"Visa instruktioner för kontoradering"}]]}]
+2f:null
+27:true
+d:C
+26:0
+12:"$undefined"
+f:"$undefined"
+c:"$undefined"
+25:"$undefined"
+1e:"$undefined"
