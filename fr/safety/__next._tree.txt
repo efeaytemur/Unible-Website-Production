@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/1h9jo27zeexqd.css","style"]
+:HL["/_next/static/chunks/3x-wm4579ex3w.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"safety","h":96,"c":"$Q3"}]]
-1:[["children",{"s":{"n":"locale","t":"d","k":"fr","s":["safety","the-vibe"]},"h":65632,"c":"$Q2"}]]
-0:{"b":"dT00iEQgBPSBK3UqbkgmS","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
+1:[["children",{"s":{"n":"locale","t":"d","k":"fr","s":["account-deletion","community-guidelines","privacy-policy","safety","terms-of-use","the-vibe"]},"h":65632,"c":"$Q2"}]]
+0:{"b":"fzMROz61mnGf43dmGyCoG","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

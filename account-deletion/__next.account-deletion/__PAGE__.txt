@@ -1,0 +1,78 @@
+1:"$Sreact.fragment"
+3:"/_next/static/chunks/1qfyq1q9u8w8n.js"
+4:"ServiceWorkerRegistration"
+5:I[30679,["$3"],"$4"]
+6:I[80492,["$3"],"ThemeProvider"]
+7:I[39756,["$3"],"default"]
+8:I[37457,["$3"],"default"]
+9:"/_next/static/chunks/0p77h80imyeei.js"
+a:"/_next/static/chunks/3nhft29xhev61.js"
+b:I[22016,["$3","$9","$a"],""]
+12:"DocumentLanguage"
+13:I[39151,["$3","$9","$a"],"$12"]
+14:"PageEntryTransition"
+15:I[59750,["$3","$9","$a"],"$14"]
+16:I[70119,["$3","$9","$a"],"Header"]
+1d:"ViewportBoundary"
+1e:I[97367,["$3"],"$1d"]
+1f:"MetadataBoundary"
+20:I[97367,["$3"],"$1f"]
+21:"$Sreact.suspense"
+22:I[27201,["$3"],"IconMark"]
+:HL["/_next/static/chunks/3x-wm4579ex3w.css","style"]
+2:T406,
+(() => {
+  const supported = ["en","de","fr","es","it","sv"];
+  const storageKey = "unible-locale";
+  const pathLocale = window.location.pathname.split("/")[1].toLowerCase();
+
+  try {
+    if (supported.includes(pathLocale)) {
+      window.localStorage.setItem(storageKey, pathLocale);
+      return;
+    }
+
+    if (window.location.pathname !== "/") {
+      window.localStorage.setItem(storageKey, "en");
+      return;
+    }
+
+    const savedLocale = window.localStorage.getItem(storageKey);
+    const browserLocale = (navigator.languages || [navigator.language])
+      .map((language) => language.toLowerCase().split("-")[0])
+      .find((language) => supported.includes(language));
+    const locale = savedLocale && supported.includes(savedLocale) ? savedLocale : browserLocale;
+
+    if (locale && locale !== "en") {
+      window.location.replace(
+        "/" + locale + "/" + window.location.search + window.location.hash
+      );
+    }
+  } catch {
+    // Keep the English fallback when browser storage is unavailable.
+  }
+})();
+d:X
+10:X
+10:C
+11:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$L13",null,{"locale":"en"}],["$","$L15",null,{"targetId":"account-deletion-overview"}],["$","$L16",null,{"locale":"en","copy":{"metaTitle":"Unible | Campus Life, Upgraded.","metaDescription":"50% academic network, 50% spontaneous campus plans. Connect with students at your university without the dating app awkwardness.","skipLink":"Skip to content","nav":{"campus":"Campus","network":"Network","lounge":"Lounge","vibe":"The Vibe","safety":"Safety","signIn":"Sign in","menu":"Menu","language":"Language"},"goal":{"heading":"Live your campus","title":"Live your campus, effortlessly.","body":"Campus life is better when it's not forced. Whether you need a study buddy before finals, a 15-minute coffee break between lectures, or someone to join Friday plans—Unible makes meeting people on your campus effortless and pressure-free.","interestsLabel":"Unible member interests","cards":[{"alt":"Smiling woman carrying a skateboard in a park","badge":"Coffee & Chat"},{"alt":"Man jogging and smiling in a city park","badge":" Study Sessions"},{"alt":"Woman holding a small fluffy dog outdoors","badge":"Friday Plans"}]},"campus":{"eyebrow":"The Unible Movement","title":"Built by students, for a better campus culture.","body":"University should be the easiest place to meet people, yet digital awkwardness keeps everyone in their own bubble. Unible exists to break that barrier without sacrificing your privacy or comfort.\n\nSupport a healthier way to socialize. Join our founding campus wave to unlock early access, shape how Unible works at your school, and set the standard for pressure-free connections.","cta":"Claim Founding Access"},"network":{"eyebrow":"Two sides of campus","title":"50% Future. 50% Chemistry.","networkTitle":"Unible Network","loungeTitle":"Unible Lounge","dateBody":"Unible Network is built for your academic and career goals. Match with students in your faculty, find a Python project partner, or team up for finals—and see where the connection leads.","dateCta":"Find a study partner","bffBody":"Unible Lounge is where plans happen without the dating-app pressure. Grab a 15-minute fika between lectures, find a badminton rival, or join a Friday pub crawl effortlessly.","bffCta":"Step into the Lounge"},"lounge":{"eyebrow":"Find your crew","quote":"I just posted a spontaneous sunset picnic plan on campus. Five girls from completely different faculties joined in—now our Tuesday park picnics are the highlight of my week.","attribution":"Maja, Freja, Astrid & 3 others • KTH Stockholm","cta":"Explore Lounge moments"},"download":{"title":"Get the Unible app","body":"Just scan the QR code to get started.","cta":"Download now"},"footer":{"apps":"Our app","app":"Unible","company":"Company","about":"About","support":"Support","legal":"Legal","privacy":"Privacy","terms":"Terms of Use","guidelines":"Guidelines","copyright":"Unible. All rights reserved."}},"currentPage":"accountDeletion"}],"$L17","$L18"],["$L19","$L1a"],"$L1b"]}],"p":"$@1c","v":null,"s":"$d"}}]]
+e:[["children",{"s":"account-deletion","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@f","v":"$10","s":"$d"},"c":"$Q11"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3x-wm4579ex3w.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1qfyq1q9u8w8n.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$Lb",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[]]}]}]]}]}]]}],"p":"$@c","v":null,"s":"$d"},"c":"$Qe"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Account Deletion | Unible"}],["$","meta","1",{"name":"description","content":"Learn how to permanently delete your Unible account and associated data."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","link","3",{"rel":"canonical","href":"https://unible.app/account-deletion/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"https://unible.app/account-deletion/"}],["$","link","5",{"rel":"alternate","hrefLang":"de","href":"https://unible.app/de/account-deletion/"}],["$","link","6",{"rel":"alternate","hrefLang":"fr","href":"https://unible.app/fr/account-deletion/"}],["$","link","7",{"rel":"alternate","hrefLang":"es","href":"https://unible.app/es/account-deletion/"}],["$","link","8",{"rel":"alternate","hrefLang":"it","href":"https://unible.app/it/account-deletion/"}],["$","link","9",{"rel":"alternate","hrefLang":"sv","href":"https://unible.app/sv/account-deletion/"}],["$","link","10",{"rel":"alternate","hrefLang":"x-default","href":"https://unible.app/account-deletion/"}],["$","link","11",{"rel":"icon","href":"/web/favicon.ico"}],["$","link","12",{"rel":"apple-touch-icon","href":"/web/apple-touch-icon.png"}],["$","$L22","13",{}]]}]}],null]}],null]}],"p":"$@23","v":null,"s":"$d"}},"a":"$@24","u":"$@25","b":"fzMROz61mnGf43dmGyCoG"}
+26:I[92349,["$3","$9","$a"],"Hero"]
+27:"LocalePreferenceLink"
+28:I[19637,["$3","$9","$a"],"$27"]
+29:I[97367,["$3"],"OutletBoundary"]
+17:["$","main",null,{"id":"main","children":[["$","$L26",null,{"locale":"en"}],["$","section",null,{"id":"account-deletion-overview","className":"safety-content","aria-labelledby":"account-deletion-overview-title","children":["$","div",null,{"className":"safety-layout section-shell","children":[["$","header",null,{"className":"safety-intro","children":[["$","p",null,{"className":"eyebrow","children":"Unible"}],["$","h2",null,{"id":"account-deletion-overview-title","children":"Account Deletion"}],[["$","p","Delete your Unible account and its associated data using the app or by contacting support.",{"children":"Delete your Unible account and its associated data using the app or by contacting support."}]]]}],["$","div",null,{"className":"safety-body","children":[["$","nav",null,{"className":"safety-nav","aria-label":"Account deletion sections","children":[["$","p",null,{"children":"On this page"}],[["$","a","delete-your-account",{"href":"#delete-your-account","children":"How to delete your account"}]]]}],["$","div",null,{"className":"safety-sections","children":[["$","article","delete-your-account",{"id":"delete-your-account","children":[["$","h3",null,{"children":"How to delete your account"}],[["$","p","To delete your Unible account, you can go to Settings > Delete Account in the app, or if you can't access the app, you can send an email to [helpunible@gmail.com](mailto:helpunible@gmail.com) with the subject 'Delete My Account' from your registered university email address. Your data will be permanently deleted within 48 hours.",{"children":["To delete your Unible account, you can go to Settings > Delete Account in the app, or if you can't access the app, you can send an email to ",["$","a","mailto:helpunible@gmail.com-140",{"className":"information-inline-link","href":"mailto:helpunible@gmail.com","target":"_blank","rel":"noreferrer","children":"helpunible@gmail.com"}]," with the subject 'Delete My Account' from your registered university email address. Your data will be permanently deleted within 48 hours."]}]],"$undefined"]}]]}]]}]]}]}]]}]
+18:["$","footer",null,{"className":"site-footer","children":[["$","div",null,{"className":"footer-grid section-shell","children":[["$","a",null,{"className":"footer-brand","href":"/","children":"Unible"}],["$","div",null,{"children":[["$","h2",null,{"children":"Our app"}],["$","a",null,{"href":"/","children":"Unible"}]]}],["$","div",null,{"children":[["$","h2",null,{"children":"Company"}],["$","$Lb",null,{"href":"/the-vibe?intro=1","children":"About"}],["$","span",null,{"children":"Support"}]]}],["$","div",null,{"children":[["$","h2",null,{"children":"Legal"}],["$","$Lb",null,{"href":"/privacy-policy?intro=1","children":"Privacy"}],["$","$Lb",null,{"href":"/terms-of-use?intro=1","children":"Terms of Use"}],["$","$Lb",null,{"href":"/community-guidelines?intro=1","children":"Guidelines"}]]}]]}],["$","div",null,{"className":"footer-lower section-shell","children":[["$","p",null,{"children":["© ",2026," ","Unible. All rights reserved."]}],["$","nav",null,{"aria-label":"Language","children":[["$","$L28","en",{"href":"/account-deletion?intro=1","locale":"en","hrefLang":"en","aria-current":"page","children":"English"}],["$","$L28","de",{"href":"/de/account-deletion?intro=1","locale":"de","hrefLang":"de","children":"Deutsch"}],["$","$L28","fr",{"href":"/fr/account-deletion?intro=1","locale":"fr","hrefLang":"fr","children":"Français"}],["$","$L28","es",{"href":"/es/account-deletion?intro=1","locale":"es","hrefLang":"es","children":"Español"}],["$","$L28","it",{"href":"/it/account-deletion?intro=1","locale":"it","hrefLang":"it","children":"Italiano"}],["$","$L28","sv",{"href":"/sv/account-deletion?intro=1","locale":"sv","hrefLang":"sv","children":"Svenska"}]]}]]}]]}]
+19:["$","script","script-0",{"src":"/_next/static/chunks/0p77h80imyeei.js","async":true}]
+1a:["$","script","script-1",{"src":"/_next/static/chunks/3nhft29xhev61.js","async":true}]
+1b:["$","$L29",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@2a"}]}]
+d:300
+2a:null
+25:true
+d:C
+24:0
+f:"$undefined"
+c:"$undefined"
+23:"$undefined"
+1c:"$undefined"

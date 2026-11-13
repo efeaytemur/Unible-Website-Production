@@ -1,32 +1,64 @@
 1:"$Sreact.fragment"
-2:"/_next/static/chunks/1qfyq1q9u8w8n.js"
-3:"ServiceWorkerRegistration"
-4:I[30679,["$2"],"$3"]
-5:I[80492,["$2"],"ThemeProvider"]
-6:I[39756,["$2"],"default"]
-7:I[37457,["$2"],"default"]
-8:"/_next/static/chunks/2n5qeheznvl4u.js"
-9:I[22016,["$2","$8"],""]
-10:I[97367,["$2"],"OutletBoundary"]
-11:"$Sreact.suspense"
-14:"ViewportBoundary"
-15:I[97367,["$2"],"$14"]
-16:"MetadataBoundary"
-17:I[97367,["$2"],"$16"]
-18:I[27201,["$2"],"IconMark"]
-:HL["/_next/static/chunks/1h9jo27zeexqd.css","style"]
-b:X
-e:X
-e:C
-f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$L9",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/2n5qeheznvl4u.js","async":true}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":"$@13","v":null,"s":"$b"}}]]
-c:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@d","v":"$e","s":"$b"},"c":"$Qf"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1h9jo27zeexqd.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1qfyq1q9u8w8n.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","$L4",null,{}],["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$L9",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[]]}]}]]}]}]]}],"p":"$@a","v":null,"s":"$b"},"c":"$Qc"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L15",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Unible | Date, Chat & Meet New People"}],["$","meta","1",{"name":"description","content":"Make meaningful connections through Unible Date and BFF."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","link","3",{"rel":"icon","href":"/web/favicon.ico"}],["$","link","4",{"rel":"apple-touch-icon","href":"/web/apple-touch-icon.png"}],["$","$L18","5",{}]]}]}],null]}],null]}],"p":"$@19","v":null,"s":"$b"}},"a":"$@1a","u":"$@1b","b":"dT00iEQgBPSBK3UqbkgmS"}
-12:null
-b:300
-1b:true
-b:C
-1a:0
-d:"$undefined"
-a:"$undefined"
-19:"$undefined"
-13:"$undefined"
+3:"/_next/static/chunks/1qfyq1q9u8w8n.js"
+4:"ServiceWorkerRegistration"
+5:I[30679,["$3"],"$4"]
+6:I[80492,["$3"],"ThemeProvider"]
+7:I[39756,["$3"],"default"]
+8:I[37457,["$3"],"default"]
+9:"/_next/static/chunks/2n5qeheznvl4u.js"
+a:I[22016,["$3","$9"],""]
+11:I[97367,["$3"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[97367,["$3"],"$15"]
+17:"MetadataBoundary"
+18:I[97367,["$3"],"$17"]
+19:I[27201,["$3"],"IconMark"]
+:HL["/_next/static/chunks/3x-wm4579ex3w.css","style"]
+2:T406,
+(() => {
+  const supported = ["en","de","fr","es","it","sv"];
+  const storageKey = "unible-locale";
+  const pathLocale = window.location.pathname.split("/")[1].toLowerCase();
+
+  try {
+    if (supported.includes(pathLocale)) {
+      window.localStorage.setItem(storageKey, pathLocale);
+      return;
+    }
+
+    if (window.location.pathname !== "/") {
+      window.localStorage.setItem(storageKey, "en");
+      return;
+    }
+
+    const savedLocale = window.localStorage.getItem(storageKey);
+    const browserLocale = (navigator.languages || [navigator.language])
+      .map((language) => language.toLowerCase().split("-")[0])
+      .find((language) => supported.includes(language));
+    const locale = savedLocale && supported.includes(savedLocale) ? savedLocale : browserLocale;
+
+    if (locale && locale !== "en") {
+      window.location.replace(
+        "/" + locale + "/" + window.location.search + window.location.hash
+      );
+    }
+  } catch {
+    // Keep the English fallback when browser storage is unavailable.
+  }
+})();
+c:X
+f:X
+f:C
+10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$La",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/2n5qeheznvl4u.js","async":true}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":"$@14","v":null,"s":"$c"}}]]
+d:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3x-wm4579ex3w.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1qfyq1q9u8w8n.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","main",null,{"className":"not-found","children":[["$","p",null,{"className":"eyebrow","children":"404"}],["$","h1",null,{"children":"This connection could not be found."}],["$","$La",null,{"className":"button button-dark","href":"/","children":"Back to Unible"}]]}],[]]}]}]]}]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Unible | Date, Chat & Meet New People"}],["$","meta","1",{"name":"description","content":"Make meaningful connections through Unible Date and BFF."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","link","3",{"rel":"icon","href":"/web/favicon.ico"}],["$","link","4",{"rel":"apple-touch-icon","href":"/web/apple-touch-icon.png"}],["$","$L19","5",{}]]}]}],null]}],null]}],"p":"$@1a","v":null,"s":"$c"}},"a":"$@1b","u":"$@1c","b":"fzMROz61mnGf43dmGyCoG"}
+13:null
+c:300
+1c:true
+c:C
+1b:0
+e:"$undefined"
+b:"$undefined"
+1a:"$undefined"
+14:"$undefined"
